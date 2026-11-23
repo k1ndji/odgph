@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Déclaration d'accessibilité — ODGPH</title>
+  <meta name="description" content="Engagement d'accessibilité numérique de l'ODGPH : normes WCAG 2.2 AA, mesures mises en œuvre, limites connues et moyens de signalement.">
+  <meta name="theme-color" content="#08243d">
+  <meta property="og:title" content="Déclaration d'accessibilité — ODGPH">
+  <meta property="og:description" content="Engagement d'accessibilité numérique de l'ODGPH : normes WCAG 2.2 AA, mesures mises en œuvre, limites connues et moyens de signalement.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/atkinson-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu principal</a>
+
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <p class="topbar__note">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-4.6-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.4-7 10-7 10Z"/></svg>
+        <span>Genre, handicap et autonomisation — agir ensemble pour l'égalité</span>
+      </p>
+      <div class="topbar__actions">
+        <a class="topbar__link" href="tel:+50934519374">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 4h3l2 5-2 1a12 12 0 0 0 6 6l1-2 5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg>
+          <span>+509 3451-9374</span>
+        </a>
+        <span class="topbar__sep" aria-hidden="true"></span>
+        <a class="topbar__link" href="accessibilite.html" hreflang="fr">FR</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="ODGPH — retour à l'accueil">
+        <img class="brand__logo" src="assets/img/logo-mark.png" width="512" height="512" alt="">
+        <span class="brand__text">
+          <span class="brand__acronym">ODGPH</span>
+          <span class="brand__full">Genre &amp; Personnes Handicapées</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">Accueil</a></li>
+          <li><a class="nav__link" href="a-propos.html">À propos</a></li>
+          <li><a class="nav__link" href="programmes.html">Programmes</a></li>
+          <li><a class="nav__link" href="agir.html">Agir</a></li>
+          <li><a class="nav__link" href="contact.html">Contact</a></li>
+        </ul>
+        <a class="btn btn--rose nav__cta" href="agir.html#don">Faire un don</a>
+      </nav>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="drawer">
+        <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        Menu
+      </button>
+    </div>
+  </header>
+
+  <div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Menu de navigation" hidden>
+    <div class="drawer__scrim"></div>
+    <div class="drawer__panel">
+      <div class="drawer__head">
+        <a class="brand" href="index.html" aria-label="ODGPH — accueil">
+          <img class="brand__logo" src="assets/img/logo-mark.png" width="512" height="512" alt="">
+          <span class="brand__text"><span class="brand__acronym">ODGPH</span></span>
+        </a>
+        <button class="drawer__close" type="button" aria-label="Fermer le menu">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+      <nav class="drawer__nav" aria-label="Navigation mobile">
+        <a class="drawer__link" href="index.html">Accueil <span aria-hidden="true">→</span></a>
+        <a class="drawer__link" href="a-propos.html">À propos <span aria-hidden="true">→</span></a>
+        <a class="drawer__link" href="programmes.html">Programmes <span aria-hidden="true">→</span></a>
+        <a class="drawer__link" href="agir.html">Agir <span aria-hidden="true">→</span></a>
+        <a class="drawer__link" href="contact.html">Contact <span aria-hidden="true">→</span></a>
+        <a class="drawer__link" href="accessibilite.html">Accessibilité <span aria-hidden="true">→</span></a>
+      </nav>
+      <div class="drawer__foot">
+        <a class="btn btn--rose btn--block" href="agir.html#don">Faire un don</a>
+        <a class="btn btn--outline btn--block" href="tel:+50934519374">+509 3451-9374</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container page-hero__grid">
+        <div>
+          <nav class="breadcrumb" aria-label="Fil d'Ariane">
+            <a href="index.html">Accueil</a><span aria-hidden="true">/</span><span>Accessibilité</span>
+          </nav>
+          <p class="eyebrow">Accessibilité numérique</p>
+          <h1 class="display" id="page-title" style="margin-top: 1rem;">Un site utilisable par toutes et tous. Vraiment.</h1>
+          <p class="lead page-hero__lead">
+            L'accessibilité n'est pas une option ajoutée en fin de projet : c'est une
+            exigence de base. Ce site vise le niveau AA des WCAG 2.2 et s'améliore
+            grâce à vos retours.
+          </p>
+        </div>
+        <aside class="page-hero__panel" aria-label="Outils disponibles">
+          <h2>Sur ce site</h2>
+          <ul class="panel-list">
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m4 12 5 5L20 6"/></svg><span>Panneau de confort de lecture (depuis cette page) : taille du texte, contraste, espacement.</span></li>
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m4 12 5 5L20 6"/></svg><span>Navigation complète au clavier et lien d'évitement.</span></li>
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m4 12 5 5L20 6"/></svg><span>Respect de la préférence système « réduire les animations ».</span></li>
+            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m4 12 5 5L20 6"/></svg><span>Textes alternatifs, contrastes vérifiés et structure sémantique.</span></li>
+          </ul>
+          <button class="btn btn--navy btn--sm" type="button" data-open-a11y>Ouvrir le panneau d'accessibilité</button>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--cream" style="padding-top: 1rem;">
+      <div class="container split">
+        <div class="prose">
+          <h2 id="engagement">Notre engagement</h2>
+          <p>
+            ODGPH s'engage à rendre ses services numériques accessibles aux personnes
+            en situation de handicap, conformément à la Convention relative aux droits
+            des personnes handicapées. Nous visons le niveau <strong>AA des Web Content
+            Accessibility Guidelines (WCAG) 2.2</strong>.
+          </p>
+          <p>
+            Ce site a été conçu avec des personnes concernées et testé avec des
+            technologies d'assistance : lecteurs d'écran, navigation clavier, zoom
+            navigateur et paramètres système de contraste et de mouvement.
+          </p>
+
+          <h2 id="mesures">Mesures mises en œuvre</h2>
+          <ul>
+            <li>Structure sémantique : un seul titre principal par page, repères de navigation, listes et formulaires correctement balisés.</li>
+            <li>Contraste des textes conforme au niveau AA, y compris dans les boutons et les liens.</li>
+            <li>Texte redimensionnable jusqu'à 200 % sans perte de contenu ni de fonctionnalité.</li>
+            <li>Navigation complète au clavier, avec indicateur de focus visible et lien d'évitement vers le contenu.</li>
+            <li>Formulaires avec étiquettes explicites, messages d'erreur reliés aux champs et confirmation annoncée.</li>
+            <li>Alternatives textuelles pour les images porteuses d'information ; éléments décoratifs masqués aux technologies d'assistance.</li>
+            <li>Respect de <code>prefers-reduced-motion</code> et possibilité de désactiver les animations.</li>
+            <li>Langue de la page déclarée (<code>lang="fr"</code>) et titres de pages explicites.</li>
+          </ul>
+
+          <h2 id="limites">Limites connues</h2>
+          <p>
+            Malgré notre vigilance, certains contenus peuvent encore présenter des
+            difficultés. Les cartes interactives, les documents PDF anciens et certains
+            contenus tiers ne sont pas toujours entièrement accessibles. Nous travaillons
+            à les corriger et proposons systématiquement une alternative sur demande.
+          </p>
+
+          <h2 id="signaler">Signaler un problème</h2>
+          <p>
+            Si vous rencontrez un obstacle, décrivez-nous la page, l'action et le
+            problème rencontré. Nous nous engageons à vous répondre sous 5 jours ouvrés
+            et à corriger les problèmes bloquants dans les meilleurs délais.
+          </p>
+          <p>
+            <a href="mailto:odgph.org@gmail.com">odgph.org@gmail.com</a> —
+            <a href="tel:+50934519374">+509 3451-9374</a>
+          </p>
+
+          <h2 id="donnees">Données personnelles</h2>
+          <p>
+            Les données transmises via nos formulaires sont utilisées uniquement pour
+            traiter votre demande. Elles ne sont ni vendues ni cédées à des tiers.
+            Vous pouvez demander l'accès, la rectification ou la suppression de vos
+            données en écrivant à <a href="mailto:odgph.org@gmail.com">odgph.org@gmail.com</a>.
+          </p>
+          <p>
+            Aucun cookie de mesure d'audience ou de publicité n'est déposé sans votre
+            consentement. Les préférences d'accessibilité sont enregistrées localement
+            dans votre navigateur et ne sont jamais transmises.
+          </p>
+          <p style="font-size: 0.9rem; color: var(--muted);">Déclaration établie le 23 novembre 2026. Dernière mise à jour : 23 novembre 2026.</p>
+        </div>
+
+        <aside>
+          <div class="contact-card">
+            <h3 class="h3">Sur cette page</h3>
+            <ul class="panel-list" style="margin-top: 1rem;">
+              <li><a href="#engagement" style="color: var(--navy);">Notre engagement</a></li>
+              <li><a href="#mesures" style="color: var(--navy);">Mesures mises en œuvre</a></li>
+              <li><a href="#limites" style="color: var(--navy);">Limites connues</a></li>
+              <li><a href="#signaler" style="color: var(--navy);">Signaler un problème</a></li>
+              <li><a href="#donnees" style="color: var(--navy);">Données personnelles</a></li>
+            </ul>
+          </div>
+          <div class="callout" style="margin-top: 1.25rem;">
+            <p class="callout__title">Confort de lecture</p>
+            <p style="margin-bottom: 1rem; font-size: 0.9rem;">Agrandissez le texte, renforcez les contrastes ou soulignez les liens en un clic.</p>
+            <button class="btn btn--outline btn--sm" type="button" data-open-a11y>Personnaliser l'affichage</button>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="assets/img/logo-mark.png" width="512" height="512" alt="">
+          <div>
+            <strong>ODGPH</strong>
+            <p>Organisation pour le Développement du Genre et des Personnes Handicapées.</p>
+            <p style="margin-top: 0.75rem; font-size: 0.8rem; color: rgba(255,247,240,0.55);">Agir pour les droits, l'autonomie et la dignité.</p>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h3>L'organisation</h3>
+          <ul>
+            <li><a href="a-propos.html">Notre mission</a></li>
+            <li><a href="a-propos.html#valeurs">Nos valeurs</a></li>
+            <li><a href="a-propos.html#equipe">Notre équipe</a></li>
+            <li><a href="a-propos.html#histoire">Notre histoire</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3>Agir</h3>
+          <ul>
+            <li><a href="programmes.html">Nos programmes</a></li>
+            <li><a href="agir.html#don">Faire un don</a></li>
+            <li><a href="agir.html#benevolat">Devenir bénévole</a></li>
+            <li><a href="agir.html#partenariat">Devenir partenaire</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="contact.html">Nous écrire</a></li>
+            <li><a href="tel:+50934519374">+509 3451-9374</a></li>
+            <li><a href="mailto:odgph.org@gmail.com">odgph.org@gmail.com</a></li>
+            <li><span style="font-size: 0.8rem; color: rgba(255,247,240,0.7);">Lundi – samedi, 8h30 – 16h00</span></li>
+            <li><a href="accessibilite.html">Accessibilité</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© <span data-year>2026</span> ODGPH. Tous droits réservés.</p>
+        <div class="footer__legal">
+          <a href="accessibilite.html">Déclaration d'accessibilité</a>
+          <a href="accessibilite.html#donnees">Données personnelles</a>
+          <a href="contact.html">Mentions légales</a>
+        </div>
+        <div class="footer__social">
+          <a href="#" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H7v3h3v6h3v-6h3l1-3h-4v-2c0-.6.4-1 1-1Z"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.5 8H4v12h2.5V8Zm-1.2-4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3ZM20 13.4c0-3-1.6-4.4-3.7-4.4-1.7 0-2.5.9-2.9 1.6V8H11v12h2.5v-6.4c0-1.3.6-2.1 1.8-2.1s1.7.8 1.7 2.1V20H20v-6.6Z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12s0-3.5-.4-5.2c-.2-.9-.9-1.6-1.8-1.8C18 4.6 12 4.6 12 4.6s-6 0-7.8.4c-.9.2-1.6.9-1.8 1.8C2 8.5 2 12 2 12s0 3.5.4 5.2c.2.9.9 1.6 1.8 1.8 1.8.4 7.8.4 7.8.4s6 0 7.8-.4c.9-.2 1.6-.9 1.8-1.8C22 15.5 22 12 22 12Zm-12 3.5v-7l6 3.5-6 3.5Z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Panneau de confort de lecture -->
+  <div class="a11y-panel" id="a11y-panel" role="dialog" aria-modal="false" aria-labelledby="a11y-title"></div>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
